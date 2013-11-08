@@ -33,11 +33,11 @@ def entity_recognizer(sentences):
     """    
     sentence_lists = nltk.sent_tokenize(sentences) #default sentence segmenter
     sent_tokens = [nltk.word_tokenize(sent) for sent in sentence_lists] #word tokenizer
-    print sent_tokens    
+    print "\nsentence tokens===",sent_tokens    
     
     # I dont think we need parts of speech tagger. In case, we need it, we can use this:
     pos_tagged_sents = [nltk.pos_tag(sent) for sent in sent_tokens]  
-    print pos_tagged_sents
+    print "\npost_tagger==",pos_tagged_sents
     
     
     #make into lowercase
@@ -48,12 +48,12 @@ def entity_recognizer(sentences):
             lowercase_tokens.append(token.lower())
         lowercase_sent_tokens.append(lowercase_tokens)
         
-    print "lowercase===",lowercase_sent_tokens
+    print "\nlowercase===",lowercase_sent_tokens
         
-    #lowercase_tokens = [token.lower() for token in sent_tokens for s_token in sent_tokens] 
     
-    #call pattern matching here"     
+    #call pattern matching here to find all time-related patterns"     
     all_time_patterns = super_pattern_matcher(lowercase_tokens)
+    
     for phrase in all_time_patterns:
         #  call sub pattern matching for sub patterns
         sub_patterns = sub_pattern_matcher(phrase)
