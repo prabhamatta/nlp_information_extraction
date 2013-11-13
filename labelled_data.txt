@@ -1,0 +1,14 @@
+I went to the store this morning.	morning
+I went to the store this morning, however it is late 10am.	morning,10am
+I went to the building.	
+Early last night I went to the building.	night
+Farming gave rise to the Jiahu culture in 5800BC.	5800BC 
+At Damaidi in Ningxia, 3,172 cliff carvings dating to 6000-5000BC have been discovered.	6000-5000BC
+Let us meet tomorrow at 2pm.	tomorrow,2pm
+I will go the meeting later.	later
+Shall we go at 5:00pm?	5:00pm
+There are 1000 cookies in the jar.	
+We have a celebration on 12/12/2005	12/12/2005
+Meet me on 11/22	11/22
+I will come to the USA on 15th March	15th,March 
+Her birthday is on Friday	Friday
