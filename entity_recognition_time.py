@@ -453,7 +453,8 @@ def time_entity_recognizer(TEST_TEXT):
 if __name__ == '__main__':
     
     #Test data in labelled_data.txt file ---> get  precision and accuracy stats "
-    test_the_data()    
+    #uncomment below line to evaluate the TIME entity recognition algorithm based on the labelled data
+    #test_the_data()    
 
 
   
@@ -472,6 +473,8 @@ if __name__ == '__main__':
     Let us meet tomorrow at 2pm.
     Shall we go at 5:00pm?
     There are 1000 cookies in the jar."""  
+    
+    
     #generate TIME tags and TIME_PHRASES for the above blob of text
     time_entity_recognizer(TEST_TEXT)
     
